@@ -17,4 +17,8 @@ public class QuoteService {
     public Quotes getRandomQuote(){
         return quoteRepository.findById((long) random.nextInt(MAX_QUOTES) + 1).orElse(null);
     }
+
+    public Quotes getQuoteByGivenId(Long id) {
+        return quoteRepository.findById(id).orElse(null);
+    }
 }
