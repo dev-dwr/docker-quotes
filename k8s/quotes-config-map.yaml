@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quotes-postgres-config
+  namespace: default
+data:
+  postgres_user: postgres
+  postgres_db: quotes-db
+  postgres_port: '5432'
